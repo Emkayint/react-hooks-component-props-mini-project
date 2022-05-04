@@ -1,19 +1,11 @@
-const { default: ArticleList } = require("./ArticleList")
+// const { default: ArticleList } = require("./ArticleList")
 
-function Article(props){
-
-  let artList = props.map( article => {
-    return (
-      <>
-      <h3>{ article.title }</h3>
-      <small>{article.date}</small>
-      <p>{article.preview}</p>
-      </>
-    )
-  })
+function Article({title, date, preview}){
   return (
     <article>
-      {artList}
+      <h3>{ title }</h3>
+      <small>{ date }</small>
+      <p>{ preview }</p>
     </article>
   )
 }
