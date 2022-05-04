@@ -4,7 +4,7 @@ import Header from "./Header.js"
 import About from "./About.js"
 import ArticleList from "./ArticleList";
 
-console.log(blogData);
+// console.log(blogData);
 
 function App() {
   return (
