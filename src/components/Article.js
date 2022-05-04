@@ -1,10 +1,12 @@
+const { default: ArticleList } = require("./ArticleList")
+
 function Article(props){
 
   let artList = props.map( article => {
     return (
       <>
       <h3>{ article.title }</h3>
-      <small>article.date</small>
+      <small>{article.date}</small>
       <p>{article.preview}</p>
       </>
     )
@@ -15,3 +17,5 @@ function Article(props){
     </article>
   )
 }
+
+export default Article;
